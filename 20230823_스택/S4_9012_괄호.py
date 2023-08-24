@@ -11,7 +11,7 @@ for i in range(n):
         if j == '(':
             stack.append(j)
         else:
-            # ) 없는데 ( 만나면 이미 글러먹음
+            # ( 없는데 ) 만나면 이미 글러먹음
             if len(stack) == 0:
                 stack.append(j)
                 break
