@@ -23,9 +23,12 @@ for i in range(n):
     # 전부 다 쌍으로 없어졌으면 VPS
     if len(stack) == 0:
         print('YES')
-    
+        
     else:
         print('NO')
 
 '''참고사항'''
 # 스택의 push, pop 개념을 숙지하면 쉬웠음. () 두개가 만나면 사라진다라고 이해했으면 쉽게 풀 수있을듯?
+
+# Q. 예상질문: ( 남으면요? 
+# A. 그래서 len(stack) == 0 이면 YES라고 줬음.
