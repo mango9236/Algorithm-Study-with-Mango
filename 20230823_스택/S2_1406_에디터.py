@@ -1,4 +1,4 @@
-'''처음 시도한 코드'''
+'''처음 시도한 코드(틀린 코드)'''
 # word = list(input())
 # length = len(word)
 # idx = len(word)
@@ -34,6 +34,7 @@
 '''참고사항'''
 # remove가 시간복잡도 O(N)이라 에바인듯 
 # idx(커서위치), length(총 단어길이)로 구현하려고 했음
+#####################################################
 
 import sys 
 input = sys.stdin.readline
@@ -68,11 +69,17 @@ for i in range(n):
 
 
 # 왼쪽은 정순, 오른쪽 역순
+# 방법 1.
 for i in left:
     print(i, end="")
 
 for i in range(len(right)):
     print(right.pop(), end="")    
 
+# 방법 2.
+left += reversed(right)
+print(''.join(left))
+
 '''참고사항'''
 # push, pop O(1)이므로 0.3초안에 괜찮을듯
+# join은 split과 반대되는 메소드라고 생각하면 편할듯
